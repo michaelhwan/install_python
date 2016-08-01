@@ -1,0 +1,31 @@
+<% content_for(:header) do %>
+  <header>
+    <div class="container">
+      <%= link_to (content_tag(:p, nil, class: "icon-beaker") + " InstallRails.com"), root_path, class: "site-title" %>
+    </div>
+  </header>
+<% end %>
+
+<% content_for(:content) do %>
+  <% if content_for?(:sidebar) %>
+    <div class="row">
+      <div class="col-lg-8">
+        <%= yield %>
+      </div>
+      <div class="col-lg-4">
+        <div class="sidebar well" data-spy="affix" data-offset-top="80" data-offset-bottom="400">
+          <%= yield(:sidebar) %>
+        </div>
+      </div>
+    </div>
+
+  <% else %>
+      <%= yield %>
+  <% end %>
+<% end %>
+
+<% content_for(:footer) do %>
+  <%= link_to image_tag("https://d3dcc53t14pv6.cloudfront.net/assets/one-month-@2x.png", width: 130, height: 17), "https://onemonth.com/?utm_source=installrails", id: "footer-logo-link" %>  &copy; <%= Date.current.year %> 
+<% end %>
+
+<%= render template: "layouts/application" %>

@@ -1,0 +1,26 @@
+<section class="instructions">
+  <h1>First off, we need to figure out which instructions to give you.</h1>
+  <h2 class="text-center">Which operating system are you using?</h2>
+</section>
+
+<section class="center prompt row">
+  <div class="apple col-sm-4">
+    <%= image_tag "mac_steps/apple.png",     class: 'choose_your_os' %>
+    <br>
+    <%= button_to "Mac",     wizard_path, name: :os, method: :put, class: "option" %>
+  </div>
+  <div class="windows col-sm-4">
+    <%= image_tag "mac_steps/microsoft.png", class: 'choose_your_os' %>
+    <br>
+    <%= button_to "Windows", wizard_path, name: :os, method: :put, class: "option"  %>
+  </div>
+  <div class="other col-sm-4">
+    <%= image_tag "mac_steps/linux-logo.png", class: 'choose_your_os' %>
+    <br>
+    <%= button_to "Linux", wizard_path, name: :os, method: :put, class: "option"  %>
+  </div>
+</section>
+
+<script>
+  mixpanel.track("choose_your_os");
+</script>
