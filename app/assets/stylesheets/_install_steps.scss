@@ -47,7 +47,7 @@ section {
 }
 
 .install_steps.show {
-  color: white;
+  // color: white;
 }
 
 .install_steps.show {
@@ -128,7 +128,7 @@ section {
 }
 
 .configure_git, .find_git_bash, .install_homebrew, .verify_rails_version {
-  background-color: #8E59BC;
+  // background-color: #8E59BC;
 
   .note:before {
     border-color:#fff #8E59BC rgba(255,255,255,0.2) #658E15;
@@ -223,7 +223,7 @@ header {
 }
 
 .prompt {
-  padding-bottom: 40px;
+  padding: 10px 200px 40px 200px;
   max-width: 100%;
 
   .options {
@@ -280,7 +280,7 @@ http://nicolasgallagher.com/pure-css-folded-corner-effect/
 
 .note {
   background: rgba(255,255,255,0.2);
-  color: #fff;
+  // color: #fff;
   font-size: 90%;
   margin-bottom: 2em;
   margin-top: 2em;

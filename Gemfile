@@ -30,6 +30,6 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'wicked', '~> 1.1.0'
+gem 'wicked'
 gem 'unicorn', require: false
 gem 'figaro'

@@ -1,0 +1,21 @@
+<section class="instructions">
+  <h1>Install Python</h1>
+  <ol>
+    <li>
+      <p>Next we get python 3 using brew. Type the following into your terminal</p>
+      <p><code>brew install python3</code></p>
+      <p>When that’s finished, you should see a screen like this</p>
+      <%= image_tag 'mac_steps/python_terminal_install.png', class: "img-responsive" %>
+      <p>Notice the <samp>==> Summary line</samp>, that shows we are done and it worked!</p>
+    </li>
+    <li>
+      <p>Let’s test python3 now by checking the version. In your terminal run the following to check the version</p>
+      <p><code>Python3 --version</code></p>
+      <p>It should return</p>
+      <p><samp>Python 3.x.x</samp></p>
+      <p>If you get that, we’ve confirmed Python 3 is installed and able to be used by your user! Woo!</p>
+    </li>
+  </ol>
+</section>
+
+<%= render 'layouts/step_navigation' %>

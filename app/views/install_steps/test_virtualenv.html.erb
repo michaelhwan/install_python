@@ -1,0 +1,18 @@
+<section class="instructions">
+  <h1>Testing virtualenv &amp; virtualenv-wrapper</h1>
+  <ol>
+    <li>
+      <p>Lets make a virtualenv. To do this we can now use the commands that we just finished enabling.</p>
+      <p><code>mkvirtualenv test-venv</code></p>
+      <%= image_tag "mac_steps/testing_virtualenv_terminal.png", class: "img-responsive" %>
+    </li>
+    <li>
+      <p>Take a look at your prompt after you run the command. It shows you that you are in the virtualenv <samp>(test-venv)</samp>.</p>
+      <p>If we close the terminal and reopen, your prompt no longer shows you are in the test-venv. To get back into it, you’ll need to use the workon command</p>
+      <p><code>workon test-venv</code></p>
+      <p>THIS IS IMPORTANT. You will forget at some point to run that command, and it will cause errors like “package not found” or “can’t load x” because you aren’t in the right environment. :)</p>
+    </li>
+  </ol>
+</section>
+
+<%= render 'layouts/step_navigation' %>

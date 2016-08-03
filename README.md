@@ -5,7 +5,7 @@ Patches welcome.
 
 ## Setup
 
-After following the instructions on [the site](http://installrails.com), run
+After following the instructions on [the site](http://installpython.com), run
 
 ```bash
 rvm install 2.3.1
