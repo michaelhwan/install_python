@@ -47,7 +47,7 @@ section {
 }
 
 .install_steps.show {
-  // color: white;
+  color: white;
 }
 
 .install_steps.show {
@@ -56,7 +56,11 @@ section {
   }
 }
 
-.choose_os_version, .install_rails, .update_rubygems {
+.step_color_0 {
+  color: rgb(59, 60, 60)!important;
+}
+
+.step_color_1 {
   background-color: #5B6474;
 
   .note:before {
@@ -84,7 +88,7 @@ section {
   padding: 1.7em;
 }
 
-.find_the_command_line, .install_rvm_and_ruby {
+.step_color_2 {
   background-color: #3B4960;
 
   .note:before {
@@ -92,7 +96,7 @@ section {
   }
 }
 
-.railsinstaller, .rails_for_linux_and_other, .install_git, .railsinstaller_windows {
+.step_color_3 {
   background-color: #CE613E;
 
   .prompt {
@@ -119,7 +123,7 @@ section {
   }
 }
 
-.verify_ruby_version, .install_xcode, .textmate {
+.step_color_4 {
   background-color: #65AE55;
 
   .note:before {
@@ -127,15 +131,15 @@ section {
   }
 }
 
-.configure_git, .find_git_bash, .install_homebrew, .verify_rails_version {
-  // background-color: #8E59BC;
+.step_color_5 {
+  background-color: #8E59BC;
 
   .note:before {
     border-color:#fff #8E59BC rgba(255,255,255,0.2) #658E15;
   }
 }
 
-.sublime_text, .update_ruby, .create_ssh_key {
+.step_color_6 {
   background-color: #72B49B;
 
   .option {
@@ -152,7 +156,7 @@ section {
   }
 }
 
-.create_your_first_app, .update_rails {
+.step_color_7 {
   background: #CF7C00;
 
   .note:before {
@@ -160,7 +164,7 @@ section {
   }
 }
 
-.see_it_live {
+.step_color_8 {
   background: #5181BD;
 
   .note:before {
@@ -198,7 +202,7 @@ header {
 }
 
 .instructions {
-  // text-align: center;
+  text-align: center;
   font-size: 20px;
   line-height: 1.4;
   margin: 0 15%;
@@ -280,7 +284,7 @@ http://nicolasgallagher.com/pure-css-folded-corner-effect/
 
 .note {
   background: rgba(255,255,255,0.2);
-  // color: #fff;
+  color: #fff;
   font-size: 90%;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -295,7 +299,7 @@ http://nicolasgallagher.com/pure-css-folded-corner-effect/
     right:0;
     border-width:0 16px 16px 0;
     border-style:solid;
-    // border-color:#fff #CF7C00 rgba(255,255,255,0.2) #658E15;
+    border-color:#fff #CF7C00 rgba(255,255,255,0.2) #658E15;
     background: rgba(255,255,255,1);
     -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
     -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);

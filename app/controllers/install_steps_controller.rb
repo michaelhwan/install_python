@@ -8,6 +8,7 @@ class InstallStepsController < ApplicationController
   # rescue_from Wicked::Wizard::InvalidStepError, with: ->{ redirect_to root_path }
 
   def show
+    @color_class = "step_color_#{current_step_index % 9}" if current_step_index.present?
     render_wizard
   end
 
