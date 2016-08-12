@@ -1,18 +1,19 @@
 <section class="instructions">
   <h1>Using Pip</h1>
-  <p>Earlier, we installed Homebrew, which is a system-level package manager that lets us install software that our Mac uses. Pip is a programming-language-level package manager that lets us install python code that we can use in our projects. We are going to use Pip now to install two very helpful libraries, virtualenv and virtualenv-wrapper which makes working with virtualenv easier.</p>
-  <p>A word on Virtualenv. This piece of software allows us to make isolated environments so that we don’t run into version conflicts while programming. Each one is completely separate and allows you to code knowing that you have a safe place to work.</p>
+  <p>Earlier, we installed Homebrew, which is a system-level package manager that lets us install software that our Mac uses. Pip is a programming-language-level package manager that lets us install python code that we can use in our projects. </p>
+<p>We are going to use Pip now to install two very helpful libraries, virtualenv and virtualenv-wrapper which makes working with virtualenv easier.</p>
+  <h2>A quick word on Virtualenv.</h2><p> This piece of software allows us to make isolated environments so that we don’t run into version conflicts while programming. Each one is completely separate and allows you to code knowing that you have a safe place to work.</p>
 
   <ol>
     <li>
       <p>To install virtualenv we can run</p>
-      <p><code>pip3 install virtualenv</code></p>
+      <pre><code>pip3 install virtualenv</code></pre>
       <p>The output should look like this</p>
       <%= image_tag "mac_steps/virtualenv_terminal_install.png", class: "img-responsive" %>
     </li>
     <li>
       <p>Then we can grab virtualenv-wrapper</p>
-      <p><code>pip3 install virtualenvwrapper</code></p>
+      <pre><code>pip3 install virtualenvwrapper</code></pre>
       <p>This is what the output should look like</p>
       <%= image_tag "mac_steps/virtualenvwrapper_terminal_install.png", class: "img-responsive"  %>
       <p>Great! Now we have all python tools we need to finish out our python environment. Let’s set up the last pieces, which may prove a little challenging. Don’t get discouraged!</p>

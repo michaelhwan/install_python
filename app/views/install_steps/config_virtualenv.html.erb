@@ -4,40 +4,44 @@
 
   <ol>
     <li>
-      <p>Run <code>mkdir ~/Envs</code> in the terminal</p>
+      <p>In your terminal run the following command:
+         <pre><code>mkdir ~/Envs</code></pre></p>
       <p>This makes a folder in our home directory that we’ll use to store our venvs.</p>
     </li>
     <li>
-      <p><code>export WORKON_HOME=~/Envs</code></p>
+      <p>Then run:</p>
+      <pre><code>export WORKON_HOME=~/Envs</code></pre>
       <p>This says that we have set our virtualenvs to live in our home directory in a folder called Envs.</p>
     </li>
     <li>
       <p>Next we’ll tell our computer where to find python3 (which has our virtualenv software that we installed via pip3).</p>
-      <p><code>export VIRTUALENVWRAPPER_PYTHON=”$(command \which python3)”</code></p>
+      <pre><code>export VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"</code></pre>
     </li>
     <li>
       <p>Then we can run the last command telling our computer how to set up virtualenv.</p>
-      <p><code>source /usr/local/bin/virtualenvwrapper.sh</code></p>
+      <pre><code>source /usr/local/bin/virtualenvwrapper.sh</code></pre>
       <p>If successful the output should look like this</p>
       <%= image_tag "mac_steps/config_virtualenv_terminal.png", class: "img-responsive" %>
     </li>
     <li>
       <p>Now we can go ahead and make this permanent.</p>
-      <p>Run, <code>touch ~/.bash_profile</code>.</p>
-      <p>Then, <code>open ~/.bash_profile</code>.</p>
+      <p>Run:</p> 
+      <pre><code>touch ~/.bash_profile</code>.</pre>
+      <p>Then:</p>
+      <pre> <code>open ~/.bash_profile</code>.</pre>
       <p>This should open a text editor for you to paste the following into that file. NOTICE NO QUOTES ON THE VIRTUALENV LINE.</p>
       <p>
-        <pre>export WORKON_HOME=~/Envs
+        <pre><code>export WORKON_HOME=~/Envs
 export VIRTUALENVWRAPPER_PYTHON=$(command \which python3)
-source /usr/local/bin/virtualenvwrapper.sh</pre>
+source /usr/local/bin/virtualenvwrapper.sh</code></pre>
       </p>
       <p>Save the file and close the editor. To make sure it worked, we will need to close terminal.app as well and re-open it.</p>
     </li>
     <li>
       <p>To test our work, run:</p>
-      <p><code>echo $VIRTUALENVWRAPPER_PYTHON</code></p>
+      <pre><code>echo $VIRTUALENVWRAPPER_PYTHON</code></pre>
       <p>This will read from the variable we set, if you see</p>
-      <p><samp>usr/local/bin/python3</samp></p>
+      <pre><code>usr/local/bin/python3</code></pre>
       <p>You are set!</p>
     </li>
   </ol>

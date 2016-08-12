@@ -3,18 +3,18 @@
   <ol>
     <li>
       <p>Let’s verify where Python is installed by running the following command</p>
-      <p><code>which python 3</code></p>
+      <pre><code>which python3</code></pre>
       <p>If the output says <samp>/usr/local/bin</samp>, we are set!</p>
       <p>If the output says <samp>/Library/Frameworks</samp> we have to make some changes.</p>
     </li>
     <li>
       <p>You’ll need to open your bash profile by running the following</p>
-      <p><code>open ~/.bash_profile</code></p>
+      <pre><code>open ~/.bash_profile</code></pre>
       <p>Then you’ll need to remove the two lines that start with</p>
       <p><samp>PATH=”/Library/Frameworks/</samp></p>
       <p><samp>export PATH</samp></p>
       <p>Save the file. We’ll check our work by opening terminal and typing,</p>
-      <p><code>which python</code></p>
+      <pre><code>which python</code></pre>
       <p>If we see,</p>
       <p><samp>/usr/local/bin</samp></p>
       <p>We were successful!</p>
